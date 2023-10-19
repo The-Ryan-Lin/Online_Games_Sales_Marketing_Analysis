@@ -22,9 +22,4 @@ Two datasets were used in this analysis and can be found in the repository (incl
 5. Clean, manipulate  and visualise the data. Perform exploratory data analysis (EDA) techniques to clean and manipulate the data so that you determine how reliable the data is (e.g. normal distribution, skewness, or kurtosis).
 6. Making recommendations to the business. Apply regression techniques to determine any possible relationship(s) in sales between North America, Europe, and global sales
 
-1. Setting Up the GitHub Repository
-2. Importing and Exploring Data
-3. Analysing the Data: Initial Exploration
-4. Sentiment Analysis: NHS-related Twitter Data
-5. Visualising and Identifying Initial Trends
-6. Findings and Recommendations
+
