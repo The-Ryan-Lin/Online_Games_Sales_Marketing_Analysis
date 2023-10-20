@@ -1,7 +1,7 @@
 # Ryan_Lin_DA301_Assignment
 ## Turtle Games - Predicting Future Outcomes
 
-The goal of this project was to explore customer demographic and sales data of Turtle Games, a game manufacturer and retailer with a global customer base. We were tasked to determine what can be done to improve the overall sales performance of Turtle Games, primarily through utilising customer trends. The initial set od questions given by Turtle games are show below. 
+The goal of this project was to explore customer demographic and sales data of Turtle Games, a game manufacturer and retailer with a global customer base. We were tasked to determine what can be done to improve the overall sales performance of Turtle Games, primarily through utilising customer trends. The initial set of questions given by Turtle games are show below. 
 - how customers accumulate loyalty points
 - how groups within the customer base can be used to target specific market segments 
 - how social data (e.g. customer reviews) can be used to inform marketing campaigns the impact that each product has on sales
