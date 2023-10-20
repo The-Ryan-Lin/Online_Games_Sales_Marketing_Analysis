@@ -4,7 +4,7 @@
 
 ###############################################################################
 
-## In particular, from this analysis in R,Turtle Games wants to understand:
+## In particular, from this analysis in R,Turtle Games wants to understand (order of analysis):
 ## - what is the impact on sales per product and by platform
 ## - the reliability of the data (e.g. normal distribution, Skewness, Kurtosis)
 ## - if there is any possible relationship(s) in sales between North America,
@@ -14,10 +14,7 @@
 
 # 4: EDA using R
 
-## One or more of the packages to be updated are currently loaded. 
-## Restarting R prior to install is highly recommended.
-## RStudio can restart R before installing the requested packages.
-## All work and data will be preserved during restart.
+## It is recommended to restart R before installing the requested packages below
 
 ###############################################################################
 
@@ -49,8 +46,8 @@ library(nortest)
 # Print the current working directory
 # print(current_directory)
 
-# Set the working directory to a specific folder
-setwd("/Users/RyanLin/Google Drive/My Drive/LSE Data Analytics/Course 3 - Advanced Analytics for Organisational Impact /DA301_final_assignment")
+# Set the working directory to a specific folder if required
+# setwd("/Users/RyanLin/Google Drive/My Drive/LSE Data Analytics/Course 3 - Advanced Analytics for Organisational Impact /DA301_final_assignment")
 
 # Import the data set.
 turtle_sales <- read.csv("turtle_sales.csv")
@@ -218,14 +215,6 @@ ggplot(subset_turtle_sales, aes(x = factor(1), y = NA_Sales)) +
   scale_x_discrete(labels = c("NA Sales", "EU Sales", "Global Sales")) +
   theme_minimal()
 
-# Create a boxplot for all three sales data columns with outliers removed
-ggplot(subset_turtle_sales_cleaned, aes(x = factor(1), y = NA_Sales)) +
-  geom_boxplot(fill = "lightblue") +
-  geom_boxplot(aes(x = factor(2), y = EU_Sales), fill = "lightgreen") +
-  geom_boxplot(aes(x = factor(3), y = Global_Sales), fill = "lightcoral") +
-  labs(title = "Boxplot of Sales Data (Outliers Removed)", x = NULL, y = "Sales (£M)") +
-  scale_x_discrete(labels = c("NA Sales", "EU Sales", "Global Sales")) +
-  theme_minimal()
 
 ## 4a) Scatterplots for different combinations of sales columns
 
@@ -267,6 +256,17 @@ subset_turtle_sales_cleaned <- subset_turtle_sales
 subset_turtle_sales_cleaned <- remove_outliers(subset_turtle_sales_cleaned, "Global_Sales")
 subset_turtle_sales_cleaned <- remove_outliers(subset_turtle_sales_cleaned, "NA_Sales")
 subset_turtle_sales_cleaned <- remove_outliers(subset_turtle_sales_cleaned, "EU_Sales")
+
+
+# Create a boxplot for all three sales data columns with outliers removed
+ggplot(subset_turtle_sales_cleaned, aes(x = factor(1), y = NA_Sales)) +
+  geom_boxplot(fill = "lightblue") +
+  geom_boxplot(aes(x = factor(2), y = EU_Sales), fill = "lightgreen") +
+  geom_boxplot(aes(x = factor(3), y = Global_Sales), fill = "lightcoral") +
+  labs(title = "Boxplot of Sales Data (Outliers Removed)", x = NULL, y = "Sales (£M)") +
+  scale_x_discrete(labels = c("NA Sales", "EU Sales", "Global Sales")) +
+  theme_minimal()
+
 
 # Create scatterplots after removing outliers
 scatterplot1 <-ggplot(subset_turtle_sales_cleaned, aes(x = NA_Sales, y = Global_Sales)) +
@@ -901,12 +901,19 @@ predicted_sales
 
 ###############################################################################
 
-# 5. Observations and insights
+# 5. Observations and insights of predicted values
 
-## 1.	For the first set of values with 'NA_Sales_sum' of 34.02 and 'EU_Sales_sum' of 23.80, the predicted global sales are approximately 5053.26. This suggests that with high 'NA_Sales' and 'EU_Sales' values, the predicted global sales are relatively high.
-## 2.	For the second set of values with 'NA_Sales_sum' of 3.93 and 'EU_Sales_sum' of 1.56, the predicted global sales are approximately 14.34. These lower values for 'NA_Sales' and 'EU_Sales' result in a much lower predicted global sales.
-## 3.	Similarly, for the third and fourth sets of values with lower 'NA_Sales_sum' and 'EU_Sales_sum', the predicted global sales are also relatively low.
-## 4.	For the fifth set of values with 'NA_Sales_sum' of 22.08 and 'EU_Sales_sum' of 0.52, the predicted global sales are approximately 98.26. This indicates that even with high 'NA_Sales' and relatively lower 'EU_Sales', the global sales are predicted to be relatively high.
+## 1.	For the first set of values with 'NA_Sales_sum' of 34.02 and 'EU_Sales_sum' of 23.80, 
+## the predicted global sales are approximately 5053.26. This suggests that with high 'NA_Sales'  
+## and 'EU_Sales' values, the predicted global sales are relatively high.
+## 2.	For the second set of values with 'NA_Sales_sum' of 3.93 and 'EU_Sales_sum' of 1.56, 
+## the predicted global sales are approximately 14.34. These lower values for 'NA_Sales' and 
+## 'EU_Sales' result in a much lower predicted global sales.
+## 3.	Similarly, for the third and fourth sets of values with lower 'NA_Sales_sum' and 'EU_Sales_sum', 
+#  the predicted global sales are also relatively low.
+## 4.	For the fifth set of values with 'NA_Sales_sum' of 22.08 and 'EU_Sales_sum' of 0.52, 
+## the predicted global sales are approximately 98.26. This indicates that even with high 'NA_Sales'
+#  and relatively lower 'EU_Sales', the global sales are predicted to be relatively high.
 
 
 
