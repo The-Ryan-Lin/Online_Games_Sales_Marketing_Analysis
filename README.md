@@ -1,3 +1,20 @@
+<h1>Advanced Analytics for Organisational Impact</h1>
+  <h3> Topics Covered</h3>
+
+Grade: 85% (Distinction)
+<h2>Context</h2> 
+  <p>
+  Turtle Games (TG) is a (fictional) game manufacturer and retailer with a global customer base, operating in North America and Europe. It manufactures and sells its own products and those made by other companies, including books, board games, video games, and toys. 
+    
+  The company collects data from sales as well as customer reviews. TG has a business objective of improving overall sales performance by analysing data on its customers and sales figures. 
+
+In terms of its customers, TG would like to understand how customers accumulate 'loyalty points', how groups within the customer base can be used to target specific market segments and how social data (customer reviews) can be used to inform marketing campaigns. 
+
+In terms of sales, TG would like to understand the impact that each product has on sales, the reliability of its sales data and the relationship between North American, European and Global sales. 
+</p>
+
+
+
 # Ryan_Lin_DA301_Assignment
 ## Turtle Games - Predicting Future Outcomes
 
