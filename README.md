@@ -46,6 +46,9 @@ The sales data (turtle_sales.csv) on 352 different games sold across North Ameri
 <h2>Insights</h2> 
 <h3>What Impact Loyalty Points?</h3> 
 
+
+
+
 - A moderately strong positive correlation (0.67)is present between customer spending scores and loyalty points, indicating more loyal or frequent customers have higher spending scores. A similar relationship is present between salary and loyalty points, implying that higher-paid individuals tend to be more loyal customers. 
 - 
 
