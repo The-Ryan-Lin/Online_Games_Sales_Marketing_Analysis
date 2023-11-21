@@ -1,7 +1,7 @@
 <h1>Advanced Analytics for Organisational Impact</h1>
   <h3> Topics Covered</h3>
   <p>
-    Data Wrangling, Data Visualisation with Python and R, Python for Advanced Analytics (scipy, statsmodels, and scikit-learn), R (tidyverse, dplyr, ggplot2), Linear Regression, Multiple Linear Regression, Logistic Regression, K-means Clustering.
+    Data Wrangling, Data Visualisation with Python and R, Python for Advanced Analytics (scipy, statsmodels, and scikit-learn), R (tidyverse, dplyr, ggplot2), Linear Regression, Multiple Linear Regression, Logistic Regression, K-means Clustering, Natural Language Processing, Sentiment Analysis. 
  </p>
 
 Grade: __82% (Distinction)__
@@ -44,7 +44,7 @@ The sales data (turtle_sales.csv) on 352 different games sold across North Ameri
   </p>
 
 <h2>Insights</h2> 
-<h3>What Impact Loyalty Points?</h3> 
+<h3>What Impacts Loyalty Points?</h3> 
 
 
 
@@ -52,6 +52,29 @@ The sales data (turtle_sales.csv) on 352 different games sold across North Ameri
 - 
 
 
+<h3>Defining Groups Within the Customer Base for Developing Targeted Marketing Strategies</h3> 
+
+A structured K-means clustering process was implemented to segment the customer base into groups (clusters) based on salary (remuneration) and spending score. Along with visually inspecting the clusters, the elbow and silhouette method was employed to determine the optimal number of clusters. Our analysis revealed 5 key customer categories as seen below: 
+
+
+
+The 5 key customer categories were labelled as Loyal Gamers, Budget Gamers, Balanced Gamers, Elite Gamers and Casual Gamers, Where each category corresponds to targetted marking approaches. 
+"Budget Gamers" benefit from budget-friendly gaming options and promotions.
+"Casual gamers" prefer convenience, short gaming sessions, and exclusive content.
+"Loyal Gamers" are interested in financing and high-quality gaming experiences.
+"Elite" value exclusivity, VIP memberships, and special events for enhanced loyalty.
+Balanced gamers, prmote affordabilty and highlighting more mid range game
+
+
+<h3>Sentiment Analysis of Customer Reviews</h3> 
+
+NLP techniques were used to analyse customer reviews and summaries of individual products (NLTK and VADER). The distribution of sentiment scores is shown below, showing more reviews were positive than negative. The mean polarity (sentiment) for the reviews and summaries column was 0.21 and 0.22 respectively, signifying a predominantly positive sentiment.  
+
+
+Next, the top negative reviews were listed which reveal recurring product concerns, such as game comprehension and missing components, providing insights for product quality improvement. It is recommended that TGs continue to gather customer data, identify recurring issues and adapt their product offerings, linking reviews to individual customers to deliver personalised support and improve customer satisfaction. 
+
+
+<h3>The Relationship Between Sales Data</h3> 
 
 ## The working order of how this project was approached is shown below and corresponds to chapters seen in the Jupyter Notebook and R file.
 ### Jupyter Notebook:
