@@ -4,7 +4,7 @@
     Data Wrangling, Data Visualisation with Python and R, Python for Advanced Analytics (scipy, statsmodels, and scikit-learn), R (tidyverse, dplyr, ggplot2), Linear Regression, Multiple Linear Regression, Logistic Regression, K-means Clustering, Natural Language Processing, Sentiment Analysis. 
  </p>
 
-Grade: __82% (Distinction)__
+Grade: __84% (Distinction)__
 <h2>Assignment Overview</h2> 
   <p>
 The goal of this project was to explore the customer demographic and sales data of Turtle Games, an online games manufacturer and retailer with a global customer base, operating in North America and Europe. We were tasked to determine what could be done to improve the overall sales performance of Turtle Games, primarily through utilising customer trends. The initial set of business questions was devised below: 
